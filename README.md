@@ -1,1 +1,1 @@
-# configuraci-n-editor
+# Instrucciones para el editor
