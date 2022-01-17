@@ -52,4 +52,7 @@ let g:airline_theme='dracula'								"el tema de airline
 
 "Nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+"Coc
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver']
 " ===========================
