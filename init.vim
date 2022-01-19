@@ -24,6 +24,7 @@ set hidden			"Permite cambiar entre buffers sin tener que guardarlos
 set noshowmode		"Nos dice en que modo estamos
 syntax enable		"Activa el coloreado de sintaxis de algunos lenguajes
 set cursorline		"Resaltar la linea del cursor actual
+set scrolloff=7     "Me permite todo el contenido de la pantalla sin tener que llegar a la ultima linea visible
 
 " Texto
 set nowrap
@@ -31,9 +32,11 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set shiftround
+set expandtab
 set clipboard=unnamed
 set encoding=utf-8
 set showmatch
+set autoindent 
 
 " Aspecto
 set termguicolors
@@ -54,5 +57,5 @@ let g:airline_theme='dracula'								"el tema de airline
 map <C-n> :NERDTreeToggle<CR>
 
 "Coc
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pyright']
 " ===========================
