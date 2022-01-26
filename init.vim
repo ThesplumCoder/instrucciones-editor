@@ -27,8 +27,8 @@ set cursorline		"Resaltar la linea del cursor actual
 set scrolloff=7     "Me permite todo el contenido de la pantalla sin tener que llegar a la ultima linea visible
 
 " Texto
-set nowrap
-set tabstop=4
+set nowrap              "Hace que la linea siga infinitamente y no se corte
+set tabstop=4           "La cantidad de espacios a los que corresponde una tabulacion
 set shiftwidth=4
 set softtabstop=4
 set shiftround
@@ -49,13 +49,13 @@ colorscheme dracula
 let g:user_emmet_leader_key=','								"Pone la tecla lider por una coma, con esto se completa los tag con doble coma.
 
 "Vim-airline
-let g:airline#extensions#tabline#enabled = 1				"muestra la linea de pestaña en la que estamos buffer
-let g:airline#extensions#tabline#formatter = 'unique_tail'	"muestra solo el nombre del archivo que estamos modificando
-let g:airline_theme='dracula'								"el tema de airline
+let g:airline#extensions#tabline#enabled = 1				"Muestra la linea de pestaña en la que estamos buffer
+let g:airline#extensions#tabline#formatter = 'unique_tail'	"Muestra solo el nombre del archivo que estamos modificando
+let g:airline_theme='dracula'								"El tema de airline
 
 "Nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
 "Coc
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pyright']
+let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-pyright']    "Los servidores de lenguaje
 " ===========================
