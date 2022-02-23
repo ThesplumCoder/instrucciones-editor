@@ -36,7 +36,6 @@ set expandtab
 set clipboard=unnamed
 set encoding=utf-8
 set showmatch
-set autoindent 
 
 " Aspecto
 set termguicolors
@@ -58,4 +57,9 @@ map <C-n> :NERDTreeToggle<CR>
 
 "Coc
 let g:coc_global_extensions = ['coc-json', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-pyright']    "Los servidores de lenguaje
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 " ===========================
